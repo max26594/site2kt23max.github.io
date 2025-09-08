@@ -1,0 +1,687 @@
+::-webkit-scrollbar {
+visibility: hidden;
+width: 0px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body, html {
+		width: 100vw;
+		margin: 0;
+		padding: 0;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	background-color: #3383e3;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-family: Arial;
+	height: 10vh;
+}
+
+
+
+nav ul {
+	position: relative;
+	z-index: 10;
+}
+
+#download button {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(0, 100, 220, 0);;
+	border-color: white;
+	height: 100%;
+	width: 40%;
+	border-radius: 3vh;
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+	transition: background 0.3s ease;
+	font-size: 1vw;
+	color: white;
+	border-style: solid;
+	
+}
+
+button > span {
+	display: block;
+}
+
+span > div {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#download {
+	display: flex;
+	justify-content: space-around;
+	padding-right: 4vw;
+	height: 10vh;
+}
+
+#download img{
+	width: 30%;
+	aspect-ratio: 1;
+	border: 0.5vw solid transparent;
+}
+
+#download span{
+	width: 60%;
+	border: 0.5vw solid transparent;
+	
+}
+
+nav a {
+	text-decoration: none; /*забираємо підкреслення в покликаннях*/
+	color: white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;	/*текст*/ 
+	align-items: center;	/*текст*/ 
+	/*border: 1px solid;*/ 
+	height: 10vh;
+	transition: color 0.3s ease;
+	text-transform: uppercase;
+}
+
+nav li {
+	/*background-color: #DB2130; */                 /*кольор невиділеного меню*/  
+	text-align: center;
+	/*border: 1px solid green;*/
+	display: block;
+}
+
+nav a:hover {                                            /*кольор виділеного меню*/  
+	color: #001EFF;
+	font-family: Arial, Helvetica, sans-serif;
+	transition: color 0.3s ease;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1vw;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+nav li>ul>li { 
+	background-color: #3383e3;
+	border: 1px solid;               /*пункти*/
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav li>ul {
+	position: absolute;
+	display: none;
+	padding: 0;
+	margin: 0;
+	height: 5vh;
+	width: 10vh;
+	font-size: 1.2vh;
+
+}
+
+ul>li:hover>ul {
+	display: block;
+}
+
+li a:hover div {
+	background-color: #001EFF;
+}
+
+.top1 {
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	background-image: url(images/11.webp);
+	background-size: cover;
+	background-position: center;
+	clip-path: polygon(0 0, 0 100%, 100% 0);
+	background-attachment: fixed;
+	
+}
+
+.mob {
+	display: none;
+}
+
+.bottom1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/1.webp);
+	background-size: cover;
+	background-position: center, center;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	
+	clip-path: polygon(0 10%, 0 100%, 100% 11%);
+}
+
+
+#mainunit {
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+
+}
+
+main {
+	background-color: #0074C7;
+	display: flex;
+	font-family: Arial;
+	flex-wrap: wrap;
+	color: white;
+	overflow: auto;
+	font-size: 1vh;
+	font-size: 1vw;
+
+	background-size: cover;
+	background-position: center;
+	background-image: url(images/11.webp);
+	width: 100%;
+	background-attachment: fixed;
+	
+}
+
+#screen1 {
+	display: flex;
+	background-size: cover;
+	background-position: center, center;
+	width: 100%;
+	padding-top: 10vh;
+	height: 90vh;
+}
+
+#screen2 {
+	
+}
+
+#screen3 {
+	display: flex;
+	background-size: cover;
+	background-position: center;
+	background-image: url(images/11.webp);
+	width: 100%;
+	background-attachment: fixed;
+	padding-top: 10vh;
+}
+
+#screen4 {
+	margin-top: 10vh;
+}	
+
+#screen5 {
+	margin-top: 10vh;
+}
+
+#screen6 {
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+#grimg {
+	display: grid; 
+	place-items: center;
+	grid-row: span 2;
+
+}
+
+#maindiv {
+	margin-top: 4vh;
+	width: 50%;
+	height: 80vh;
+	z-index: 2;
+}
+
+#seconddiv {
+	margin-top: 4vh;
+	width: 50%;
+	height: 80vh;
+	/* background-color: #DB2130; */
+	z-index: 2;
+	display: flex;
+	margin-bottom: 10vh;
+	justify-content: center;
+}
+
+#mainimg1 {
+	width: 50vw;
+	height: 50vh;
+	object-fit: cover;
+	margin-left: 3vw;
+	margin-top: 2vh;
+}
+
+#mainimg2 {
+	width: 40vw;
+	height: 50vh;
+	object-fit: cover;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-top: 2vh;
+}
+
+#maindiv1 {
+	width: 50vw;
+	border: 0.2vw solid #0074C7;
+	margin-left: 3vw;
+	margin-top: 2vh;
+}
+
+#maindiv2 {
+	width: 40vw;
+	border: 0.2vw solid #0074C7;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-top: 2vh;
+}
+
+#thirddiv1 img {
+	width: 100%;
+}
+
+#thirddiv2 img {
+	height: 50%;
+	display: block;
+}
+
+#thirddivmain {
+	display: flex;
+}
+
+td {
+	color: #001EFF;
+	font-size: 2vw;
+	width: 33%;
+	
+	padding-left: 1vw;
+}
+
+td p{
+	color: #001ADF;
+	font-size: 3vw;
+	font-weight: bold;
+}
+
+td img{
+	margin: auto;
+  	display: block;
+}
+
+.title {
+	text-align: center;
+	color: #001ADF;
+	font-size: 3vw;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+
+.scr3 {
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+	height: 30vh;
+}
+
+.scr4 {
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+
+.tddiv {
+	height: 100%;
+	background-color: red;
+}
+
+.content {
+	margin: auto;
+	width: 100%;
+	height: 5%;
+	box-sizing: border-box;
+  }
+.review {
+	padding-left: 0.1%;
+	padding-right: 0.1%;
+	position: relative;
+	height: 40vh;
+}
+
+.mainrev {
+	text-align: center;
+	background-color: #001effbe;
+	height: 30vh;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.secondrev {
+	background-color: #b0d2ffbe;
+	height: 40vh;
+	color: #001EFF;
+	padding: 4%;
+	font-size: 1.5vw;
+}
+
+.avatar {
+	width: 100%;
+	height: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	
+}
+
+.rd {
+	font-size: 2vw;
+	color: white;
+
+}
+
+.grid-container4 {
+	display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+	color: white;
+	font-size: 2vw;
+	border: 1vw solid transparent;
+}
+
+.slick-slider .slick-next:before {
+	color: #001ADF;
+}
+.slick-slider .slick-prev:before {
+	color: #001ADF;
+}
+
+#download button:hover {
+	border-color: #001EFF;
+	transition: border  0.3s ease;
+	color: #001EFF;
+	transition: color  0.3s ease;
+}
+
+footer {
+	background-color: #0066B1;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-size: 2vh;
+	font-size: 1vw;
+	
+}
+
+
+li img {
+	display: block;
+	height: 8vh;
+	aspect-ratio: 1 / 1;
+}
+
+#firsttext {
+	font-size: 3vw;
+	font-weight: bold;
+}
+#secondtext {
+	font-size: 6vh;
+	font-size: 3vw;
+	font-weight: bold;
+}
+
+nav a {
+	display: flex;
+	flex-direction: column;
+}
+
+li div {
+		
+	margin-top: 0.8vh;
+	background-color: white;
+	width: 10vh;
+	height: 1vh;
+	border-radius: 4vh;
+	transition: background-color 0.3s ease;
+}
+
+#minmenu {
+	display: none;
+}
+
+#offon {
+	display: none;
+}
+
+#minul li {
+	font-size: 2vh;
+	font-size: 2vw;
+	padding-top: 2vh;
+}
+
+.fivemain {
+	color: white;
+	background-color: #001EFF;
+	text-align: center;
+}
+
+#screen5 td .but {
+	background-color: #001EFF;
+	text-align: center;
+}
+
+#screen6 td .avatar {
+	padding: 0;
+}
+
+.bl {
+	background-color: #559FFF;
+	color: white;
+}
+
+.darkblue {
+	background-color: #001EFF;
+}
+
+#screen2 img {
+	height: 40vw;
+}
+
+.grid-container {
+    display: grid;
+	grid-column: span 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    width: 100%;
+	color: #001EFF;
+	font-size: 2vw;
+}
+
+.grid-container p {
+	color: #001ADF;
+	font-weight: bold;
+}
+
+.grid-container2 p {
+	color: #001ADF;
+	font-size: 3vw;
+	font-weight: bold;
+}
+
+.grid-container2 {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+	color: #001EFF;
+	font-size: 2vw;
+	
+}
+
+.grid-container3 {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+	color: #001EFF;
+	font-size: 2vw;
+}
+
+.grid-container5 {
+	display: grid;
+    grid-template-columns: 30% 5% 60% 5%;
+    width: 100%;
+	color: white;
+	font-size: 1.7vw;
+}
+
+.tl5 {
+	background-color: #001EFF;
+	border: 0.5vw solid #001EFF;
+	text-align: center;
+}
+
+.db {
+	background-color: #0974FF;
+	border: 1vw solid #0974FF;
+}
+
+.lb {
+	background-color: #559FFF;
+	border: 1vw solid #559FFF;
+}
+
+.mark {
+	display: grid;
+	place-items: center;
+}
+
+.lbdb {
+	background-color: #B0D2FF;
+	border: 1vw solid #4157FF;
+}
+
+.grid-container6 {
+	display: grid;
+    grid-template-columns: 65% 5% 30%;
+    width: 100%;
+	color: white;
+	font-size: 2vw;
+}
+
+.grid-container65 {
+	display: grid; 
+	grid-template-columns: 30% 5% 30% 5% 30%;
+}
+
+.grid-container65 img {
+	aspect-ratio: 1;
+	height: 4vw;
+	vertical-align: middle;
+    display: inline;
+	border: 0.4vw solid transparent;
+}
+
+.grid-container65 button {
+	color: white;
+    border-radius: 1.5vw;
+    background-color: #89BCFF;
+    border-color: #001EFF;
+	font-size: 1.4vw;
+}
+
+.devdes {
+	background-color: #4157FF;
+	border: 0.5vw solid #4157FF;
+}
+
+.formbut {
+	color: white;
+	background-color: #001EFF;
+	border: 0.5vw solid #4157FF;
+	font-size: 1.7vw;
+}
+
+.formbut:hover{
+	color: #001EFF;
+	background-color: #89BCFF;
+	border: 0.5vw solid #4157FF;
+	font-size: 1.7vw;
+	transition: background-color  0.3s ease;
+	transition: color  0.3s ease;
+	
+}
+
+.grid-container65 button:hover {
+	background-color: #70acfa;
+	transition: background-color  0.3s ease;
+}
+
+.grid-container3 p {
+	font-weight: bold;
+}
+
+.mark {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+  }
+  
+.mark .mmenu {
+	display: none;
+	position: absolute;
+	top: 145%; /* одразу під ▼ */
+	background: #89b5f2;
+	border: 1px solid #0d0dde;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+
+	right: 2.8vw;
+	width: 48vw;
+	height: 4vw;
+
+  }
+
+.mark:hover .mmenu {
+	display: flex;
+	align-items: center;
+  }
+  
+
+.mark .mmmenu {
+	display: none;
+	position: absolute;
+	top: 127%; /* одразу під ▼ */
+	background: #89b5f2;
+	border: 1px solid #0d0dde;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	
+	right: 8.8vw;
+	width: 70vw;
+	height: 4.7vw;
+
+  }
+
+.mark:hover .mmmenu {
+	display: flex;
+	align-items: center;
+  }
+  

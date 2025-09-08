@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="queries.css">
+
+	<!-- slick css -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- slick js -->
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<!-- твій код -->
+	<script src="45.js"></script>
+
+
+	 
+	<title>Музичний програвач</title>
+</head>
+<body id="mainbody">
+	<nav>
+			<ul>
+				<li><img src="images/logo.png"></li>
+				<li class="mainmenu"><a href="#screen1">Головна</a></li>
+				<li class="mainmenu"><a href="#screen2">Особливості</a></li>
+				<li class="mainmenu"><a href="#screen3">Вид</a></li>
+				<li class="mainmenu"><a href="#screen4">Відгуки</a></li>
+				<li class="mainmenu"><a href="#screen5">Зв’язок</a></li>
+				<li class="mainmenu"><a href="#screen6">Про нас</a></li>
+				<li id="offon">
+					<a href="#" id="minmenu">
+						<div></div>
+						<div></div>
+						<div></div>
+					</a>
+					<ul>
+						<li><a href="#screen1">Головна</a></li>
+						<li><a href="#screen2">Особливості</a></li>
+						<li><a href="#screen3">Вид</a></li>
+						<li><a href="#screen4">Відгуки</a></li>
+						<li><a href="#screen5">Зв’язок</a></li>
+						<li><a href="#screen6">Про нас</a></li>
+					</ul>
+				</li>
+			</ul>
+	</nav>
+	<main>
+		<div class="top1"></div>
+		<div class="bottom1"></div>
+		<div id="mainunit">
+			<div id="screen1">
+				<div id="maindiv">
+					<span id="firsttext">НАЙКРАЩИЙ ДОДАТОК ДЛЯ ПРОСЛУХОВУВАННЯ  МУЗИКИ НА ANDROID і IOS</span><br>
+					<div id="download">
+						<button><img src="images/AppStoreIcon.png">
+							<span>Завантажуй в <div>App Store</div></span>
+						</button>
+						<button><img src="images/googleStoreIcon.png">
+							<span>Завантажуй в <div>Google Play</div></span>
+						</button>
+					</div>
+				</div>
+				<div id="seconddiv">
+					<div id="thirddivmain">
+						<div id="thirddiv1">
+							<img src="images/ip1.png">
+						</div>
+						<div id="thirddiv2">
+							<img src="images/ip2.png">
+							<img src="images/ip3.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="screen2">
+				<div class="grid-container">
+					<div class="title" style="grid-column: span 3; margin-bottom: 0%;">Особливості</div>
+					<div><p>Адаптивний дизайн</p>Дизайн можна зробити максимально зручним для ваших потреб</div>
+					<div class="grimg" style="grid-row: span 2; justify-content: center;"><img src="images/ip4.png"></div>
+					<div><p>Алгоритми</p>Наші алгоритми підлаштовуються під користувача і підбирають музіку на основі його очікувань</div>
+					<div><p>Велика бібліотека</p>Наша бібліотека музики і звуків налічує понад 1 520 000 композицій</div>
+					<div><p>Створення музики</p>Ми співпрацюємо з сервісами генерації музики за допомогою ШІ, і на основі ваших очікувань ви маєте можливість генерувати нові композиції</div>
+				</div>
+			</div>
+			<div id="screen3">
+				<div class="grid-container3">
+					<div class="title" style="grid-column: span 3;">Вид додатку</div>
+					<div class="scr3" style="background-image: url(images/im1.jpg)"></div>
+					<div class="scr3" style="background-image: url(images/im2.jpg)"></div>
+					<div class="scr3" style="background-image: url(images/im3.jpg)"></div>
+					<div>ㅤ</div>
+					<div>ㅤ</div>
+					<div>ㅤ</div>
+					<div class="scr4" style="background-image: url(images/video.png);"></div>
+					<div style="grid-column: span 2; margin-left: 2%;"><p>Відео огляд додатку</p>“Додаток вражає адаптивним дизайном, що ідеально підлаштовується під ваш стиль. Величезна бібліотека з понад 1 520 000 композицій і розумні алгоритми створюють відчуття, ніби музика читає ваші думки. А можливість генерувати унікальні треки за допомогою ШІ робить досвід абсолютно неперевершеним!”</div>
+				</div>
+			</div>
+
+			<div id="screen4">
+				<div class="title">Відгуки</div>
+				<div class="content">
+					<div class="multiple-items">
+					  	<div class="review">
+							<div class="mainrev">
+								<div class="grid-container4" style="grid-column: span 2;">
+									<img src="images/r1.jpg" class="avatar">
+									<div>
+										<h1 class="rd">Михайло</h1>
+										<div class="rd">28 років</div>
+										<div class="rd">Програміст</div>
+									</div>
+								</div>
+							</div>
+							<div class="secondrev">Програвач приємно здивував простотою та стабільною роботою. Швидкий пошук, чітке відтворення, зручний інтерфейс — все на місці. Особливо подобається, як програма підбирає музику під настрій. Користуватись не лише легко, а й приємно</div>
+					    </div>
+						<div class="review">
+							<div class="mainrev">
+								<div class="grid-container4">
+									<img src="images/r2.jpg" class="avatar">
+									<div>
+										<h1 class="rd">Ігор</h1>
+										<div class="rd">18 років</div>
+										<div class="rd">Електрик</div>
+									</div>
+								</div>
+							</div>
+							<div class="secondrev">Із цим програвачем прослуховування музики стало ще приємнішим. Гарна якість звуку, продуманий дизайн і можливість створювати власні добірки — усе, що потрібно. Рекомендації часто потрапляють в точку, що приємно дивує</div>
+					    </div>
+						<div class="review">
+							<div class="mainrev">
+								<div class="grid-container4">
+									<img src="images/r3.jpg" class="avatar">
+									<div>
+										<h1 class="rd">Інна</h1>
+										<div class="rd">22 роки</div>
+										<div class="rd">Дизайнер</div>
+									</div>
+								</div>
+							</div>
+							<div class="secondrev">Програма працює без зависань навіть при слабкому інтернеті. Велика музична бібліотека, логічне меню, і жодних труднощів при використанні. З першого запуску все інтуїтивно зрозуміло. Це рідкість серед подібних сервісів</div>
+					    </div>
+						<div class="review">
+							<div class="mainrev">
+								<div class="grid-container4">
+									<img src="images/r4.jpg" class="avatar">
+									<div>
+										<h1 class="rd">Віка</h1>
+										<div class="rd">22 роки</div>
+										<div class="rd">Дизайнер</div>
+									</div>
+								</div>
+							</div>
+							<div class="secondrev">Мені подобається, що програвач не перевантажений функціями, але водночас має все необхідне. Можна легко знайти потрібний трек, налаштувати гучність або відтворення, і одразу насолоджуватись музикою</div>
+					    </div>
+						<div class="review">
+							<div class="mainrev">
+								<div class="grid-container4">
+									<img src="images/r5.jpg" class="avatar">
+									<div>
+										<h1 class="rd">Саша</h1>
+										<div class="rd">25 років</div>
+										<div class="rd">Перукар</div>
+									</div>
+								</div>
+							</div>
+							<div class="secondrev">Алгоритм підбору справді працює — після кількох прослуханих композицій програма пропонує саме те, що хочеться чути. Це створює ефект персонального підходу, що дуже цінно</div>
+					    </div>
+						<div class="review">
+							<div class="mainrev">
+								<div class="grid-container4">
+									<img src="images/r6.jpg" class="avatar">
+									<div>
+										<h1 class="rd">Вадим</h1>
+										<div class="rd">20 років</div>
+										<div class="rd">Автомеханік</div>
+									</div>
+								</div>
+							</div>
+							<div class="secondrev">Цей сервіс створює відчуття легкості та комфорту. Жодних складних налаштувань — усе працює «з коробки». Приємний візуальний стиль і стабільна робота тільки додають позитивного враження</div>
+					    </div>
+						<div class="review">
+							<div class="mainrev">
+								<div class="grid-container4">
+									<img src="images/r7.jpg" class="avatar">
+									<div>
+										<h1 class="rd">Олександр</h1>
+										<div class="rd">35 років</div>
+										<div class="rd">Менеджер</div>
+									</div>
+								</div>
+							</div>
+							<div class="secondrev">Шукав щось просте для повсякденного використання, і цей програвач виявився саме таким. Швидкий запуск, чітке управління і повна відсутність нав’язливої реклами. Дуже задоволений</div>
+					    </div>
+						<div class="review">
+							<div class="mainrev">
+								<div class="grid-container4">
+									<img src="images/r8.jpg" class="avatar">
+									<div>
+										<h1 class="rd">Юра</h1>
+										<div class="rd">33 роки</div>
+										<div class="rd">Вчитель</div>
+									</div>
+								</div>
+							</div>
+							<div class="secondrev">Зручно, що можна слухати музику і водночас користуватись іншими застосунками. Програма не пригальмовує, навіть коли відкрито кілька вікон. Все працює плавно, що дуже важливо в щоденному користуванні</div>
+					    </div>
+						<div class="review">
+							<div class="mainrev">
+								<div class="grid-container4">
+									<img src="images/r9.jpg" class="avatar">
+									<div>
+										<h1 class="rd">Маша</h1>
+										<div class="rd">29 років</div>
+										<div class="rd">Репетитор</div>
+									</div>
+								</div>
+							</div>
+							<div class="secondrev">Із цим програвачем легко зосередитися на музиці, а не на керуванні. Усе працює стабільно, без зависань, навіть під час тривалого використання. Дизайн інтерфейсу не відволікає, а добірки часто приємно дивують. Загалом, сервіс викликає позитивне враження й довіру</div>
+					    </div>
+					</div>
+				  </div> 
+			</div>
+			<div id="screen5">
+				<div class="grid-container5" style="width: 100%; margin-top: 10vh;">
+					<div class="title" style="grid-column: span 4;">Зв'язок</div>
+						<div class="tl5">Зв'язатися з нами</div>
+						<div>ㅤ</div>
+						<div class="tl5" style="grid-column: span 2;">Часті запитання</div>
+						<div>ㅤ</div>
+						<div>ㅤ</div>
+						<div>ㅤ</div>
+						<div>ㅤ</div>
+						<div class="lbdb">Ім’я</div>
+						<div>ㅤ</div>
+						<div class="db">Чи підтримує плеєр офлайн-режим?</div>
+						<div class="db mark">▼
+							<div class="mmenu">
+								ㅤТак, ви можете слухати музику без підключення
+							</div>
+						</div>
+						<div class="lbdb">Прізвище</div>
+						<div>ㅤ</div>
+						<div class="lb">Які аудіоформати підтримує плеєр?</div>
+						<div class="lb mark">▼
+							<div class="mmenu">
+								ㅤПідтримуються популярні формати: MP3, WAV та інші
+							</div>
+						</div>
+						<div class="lbdb">Ел. почта</div>
+						<div>ㅤ</div>
+						<div class="db">Чи можна синхронізувати плеєр із хмарними сервісами?</div>
+						<div class="db mark">▼
+							<div class="mmenu">
+								ㅤТак, доступна інтеграція з Google Drive, Dropbox тощо
+							</div>
+						</div>
+						<div class="lbdb" style="grid-row: span 4; height: 100%;">Повідомлення</div>
+						<div>ㅤ</div>	
+						<div class="lb">Як створювати та редагувати плейлисти?</div>
+						<div class="lb mark">▼
+							<div class="mmenu">
+								ㅤВи можете легко впорядковувати треки
+							</div>
+						</div>
+						<div>ㅤ</div>
+						<div class="db">Чи є інструменти для налаштування звуку?</div>
+						<div class="db mark">▼
+							<div class="mmenu">
+								ㅤТак, можливе тонке налаштування
+							</div>
+						</div>
+						<div>ㅤ</div>
+						<div class="lb">Як перенести свою музичну бібліотеку до плеєра?</div>
+						<div class="lb mark">▼
+							<div class="mmenu">
+								ㅤПросто імпортуйте файли зі свого пристрою чи хмари
+							</div>
+						</div>
+						<div>ㅤ</div>
+						<div class="db">Чи можна налаштувати таймер вимкнення музики?</div>
+						<div class="db mark">▼
+							<div class="mmenu">
+								ㅤТак, ви можете встановити таймер
+							</div>
+						</div>
+						<button class="formbut">Відправити</button>
+						<div>ㅤ</div>
+						<div class="lb">Чи підтримується плеєр на всіх мобільних ОС?</div>
+						<div class="lb mark">▼
+							<div class="mmenu">
+								ㅤТак, плеєр працює на Android, iOS та інших
+							</div>
+						</div>
+				</div>
+				<div class="mob">
+					<div class="mob1">
+						<div class="title" style="grid-column: span 2;">Зв'язок</div>
+						<div class="tl5" style="grid-column: span 2;">Часті запитання</div>
+						<div class="db">Чи підтримує плеєр офлайн-режим?</div>
+						<div class="db mark">▼
+							<div class="mmmenu">
+								ㅤТак, ви можете слухати музику без підключення
+							</div>
+						</div>
+						<div class="lb">Які аудіоформати підтримує плеєр?</div>
+						<div class="lb mark">▼
+							<div class="mmmenu">
+								ㅤПідтримуються популярні формати: MP3, WAV та інші
+							</div>
+						</div>
+						<div class="db">Чи можна синхронізувати плеєр із хмарними сервісами?</div>
+						<div class="db mark">▼
+							<div class="mmmenu">
+								ㅤТак, доступна інтеграція з Google Drive, Dropbox тощо
+							</div>
+						</div>
+						<div class="lb">Як створювати та редагувати плейлисти?</div>
+						<div class="lb mark">▼
+							<div class="mmmenu">
+								ㅤВи можете легко впорядковувати треки
+							</div>
+						</div>
+						<div class="db">Чи є інструменти для налаштування звуку?</div>
+						<div class="db mark">▼
+							<div class="mmmenu">
+								ㅤТак, можливе тонке налаштування
+							</div>
+						</div>
+						<div class="lb">Як перенести свою музичну бібліотеку до плеєра?</div>
+						<div class="lb mark">▼
+							<div class="mmmenu">
+								ㅤПросто імпортуйте файли зі свого пристрою чи хмари
+							</div>
+						</div>
+						<div class="db">Чи можна налаштувати таймер вимкнення музики?</div>
+						<div class="db mark">▼
+							<div class="mmmenu">
+								ㅤТак, ви можете встановити таймер
+							</div>
+						</div>
+						<div class="lb">Чи підтримується плеєр на всіх мобільних ОС?</div>
+						<div class="lb mark">▼
+							<div class="mmmenu">
+								ㅤТак, плеєр працює на Android, iOS та інших
+							</div>
+						</div>
+					</div>
+					<div class="mob2">
+						<div class="tl5">Зв'язатися з нами</div>
+						<div class="lbdb">Ім’я</div>
+						<div class="lbdb">Прізвище</div>
+						<div class="lbdb">Ел. почта</div>
+						<div class="lbdb" style="grid-row: span 4; height: 50vh;">Повідомлення</div>
+						<button class="formbut">Відправити</button>
+					</div>
+				</div>
+			</div>
+		
+
+
+
+
+			<div id="screen6">
+				<div class="grid-container6" style="width: 100%; margin-top: 10vh;">
+					<div class="title" style="grid-column: span 3;">Про нас</div>
+						<div class="tl5">Історія створення</div>
+						<div>ㅤ</div>
+						<div class="tl5">Головний розробник</div>
+						<div>ㅤ</div>
+						<div>ㅤ</div>
+						<div>ㅤ</div>
+						<div class="devdes" style="height: 100%;">Мобільний плеєр створений Олексієм Коваленком, розробником із 10-річним досвідом і пристрастю до музики. Разом із невеликою командою з п'яти фахівців він розробив продукт, що поєднує якість звуку, зручність і сучасні технології. Ми постійно вдосконалюємо плеєр, додаючи нові функції, щоб зробити ваш досвід прослуховування максимально комфортним. Музика для нас — це більше, ніж звук, це емоція, яку ми допомагаємо відчути.</div>
+						<div>ㅤ</div>
+						<div><img src="images/r6.jpg" class="avatar"></div>
+						<div>ㅤ</div>
+						<div>ㅤ</div>
+						<div>ㅤ</div>
+						<div class="grid-container65">
+							<button><img src="images/soc1.png">Приєднуйся</button>
+							<div>ㅤ</div>
+							<button><img src="images/soc2.png">Приєднуйся</button>
+							<div>ㅤ</div>
+							<button><img src="images/soc3.png">Приєднуйся</button>
+						</div>
+						<div>ㅤ</div>
+						<div>ㅤ</div>
+				</div>
+				<div class="mob">
+					<div class="mob2">
+						<div class="tl5">Історія створення</div>
+						<div class="devdes" style="height: 100%;">Мобільний плеєр створений Олексієм Коваленком, розробником із 10-річним досвідом і пристрастю до музики. Разом із невеликою командою з п'яти фахівців він розробив продукт, що поєднує якість звуку, зручність і сучасні технології. Ми постійно вдосконалюємо плеєр, додаючи нові функції, щоб зробити ваш досвід прослуховування максимально комфортним. Музика для нас — це більше, ніж звук, це емоція, яку ми допомагаємо відчути.</div>
+					</div>
+					<div class="mob2">
+						<div class="tl5">Головний розробник</div>
+						<div style="padding-top: 2vh;"><img src="images/r6.jpg" class="avatar"></div>
+					</div>
+					<div class="mob3">
+						<button><div></div><img src="images/soc1.png"><div></div>Приєднуйся<div></div></button>
+						<button><div></div><img src="images/soc2.png"><div></div>Приєднуйся<div></div></button>
+						<button><div></div><img src="images/soc3.png"><div></div>Приєднуйся<div></div></button>
+					</div>
+				</div>
+			</div>
+			
+
+		</main>
+	</div>
+	<footer id="mainfooter">
+		<p style="padding-left: 3vw;">Почта max545@gmai.com</p>
+		<p style="padding-left: 3vw;">Телефон +098 898 5874</p>	
+		<p style="padding-left: 3vw;">©Всі права захищені</p>
+	</footer>
+</body>
+</html>

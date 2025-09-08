@@ -1,0 +1,261 @@
+@media (max-width: 1000px)
+{
+
+	#offon {
+		display: block;
+	}
+	
+	.mainmenu {
+		display: none;
+	}
+	
+	#minmenu {
+		display: flex;
+	}
+
+	#download button {
+		font-size: 1.8vh;
+	}
+
+	#screen1 {
+		width: 100%;
+		display: block;
+	}
+
+	#maindiv {
+		width: 100%;
+		position: relative;
+		height: 25vh;
+		z-index: 2;
+	}
+
+	#seconddiv {
+		height: 50vh;
+		margin-top: 4vh;
+		width: 100%;
+		position: relative
+	}
+
+	#download {
+		padding-right: 0;
+	}
+
+	
+	.bottom1 {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+	
+	#download img {
+		width: 18%;
+		aspect-ratio: 1 / 1;
+	}
+
+	
+	#thirddiv1 img {
+		height: 100%;
+	}
+
+	.bottom1 {
+		height: 100%;;
+	}
+
+	#screen2 {
+		margin-top: 10%;;
+	}
+	
+	.rd {
+		font-size: 3vw;
+	}
+
+	.secondrev {
+		font-size: 2vw;
+	}
+	
+
+
+}
+
+@media (max-width: 768px)
+{
+
+.grid-container5 {
+	display: none;
+}
+
+.grid-container6 {
+	display: none;
+}
+
+.mob {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.mob1 {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	font-size: 2.6vw;
+}
+
+.mob2 {
+	margin-top: 10vh;
+	display: grid;
+	grid-template-columns: 100%;
+	font-size: 4vw;
+}
+
+.mob3 {
+	display: grid;
+	grid-template-columns: 100%;
+	font-size: 4vw;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.mob3 button {
+	display: grid;
+	grid-template-columns: 4% 20% 2% 70% 4%;
+	place-items: center;
+
+	margin-top: 1vw;
+	font-size: 8vw;
+	height: 12vw;
+
+	color: white;
+    border-radius: 1.5vw;
+    background-color: #89BCFF;
+    border-color: #001EFF;
+
+}
+
+.mob3 button:hover{
+	background-color: #70acfa;
+	transition: background-color  0.3s ease;
+}
+
+.mob3 img {
+	height: 10vw;
+}
+
+#screen6 {
+	margin-bottom: 2vh;
+}
+
+.mob2 button {
+	height: 6vh;
+	font-size: 4vw;
+}
+
+.mob2 button:hover {
+	font-size: 4vw;
+}
+
+.secondrev {
+	font-size: 4vw;
+}
+
+.rd {
+	font-size: 5vw;
+}
+
+.grimg {
+	display: none;
+}
+
+.grid-container {
+	display: block;
+	font-size: 4vw;
+}
+
+.grid-container3 {
+	display: block;
+	font-size: 4vw;
+
+}
+
+.scr3 {
+	height: 40vw;
+}
+
+.scr4 {
+	height: 60vw;
+}
+
+.title {
+	font-size: 6vw;
+}
+
+footer {
+	display: block;
+}
+
+footer p {
+	display: block;
+	font-size: 4vw;
+	text-align: center;
+	margin: 0;
+	border: 2vw solid transparent;
+}
+
+
+
+}
+
+
+
+@media (max-width: 480px)
+{
+
+
+#download button {
+	width: 80%;
+	margin-left: 10%;
+	font-size: 2vh;
+}
+
+#seconddiv {
+	margin-top: 1vh;
+	height: 70vw;
+}
+
+#download {
+	padding-right: 0;
+	display: block;
+
+}
+
+#maindiv {
+    width: 100%;
+    height: 40vh;
+    z-index: 2;
+}
+
+#offon {
+    display: block;
+}
+
+.mainmenu {
+    display: none;
+}
+
+#minmenu {
+    display: flex;
+}
+
+.bottom1 {
+	/*
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/1.webp);
+	background-size: cover;
+	background-position: center, center;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	*/
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#download img {
+	width: 20%;
+}
+
+}
